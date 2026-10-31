@@ -1,0 +1,79 @@
+.container {
+  display: flex;                  /* puts navbar and userName in one row */
+  justify-content: space-between; /* navbar on the left, user on the right */
+  align-items: center;
+  background: #ffffff;
+  padding: 0 32px;
+  height: 60px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar {
+  display: flex;                  /* puts the 3 items in a row */
+  align-items: center;
+  gap: 32px;
+}
+
+.appName {
+  font-size: 30px;
+  color: #0f766e;
+  margin: 0;
+}
+
+.navbar h2 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+}
+
+.userName {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.userName h2 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.userName button {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.navbar h2:hover{
+    text-decoration:underline;
+    text-decoration-color: #2b7e65;
+    text-decoration-thickness:3px;
+}
+
+/* ---- added for the finished app ---- */
+.layout {
+  min-height: 100vh;
+  background: #f7f7f2;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 2px;
+}
+
+/* NavLink adds the class "active" to the link of the current page */
+.navbar a.active {
+  color: #0f766e;
+  border-bottom: 3px solid #0f766e;
+}

@@ -1,0 +1,132 @@
+.TxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.TxHeader .PageTitle {
+  margin: 0;
+}
+
+.TxHeaderRight {
+  display: flex;
+  gap: 8px;
+}
+
+.TxHeaderRight select,
+.TxForm input,
+.TxForm select {
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+}
+
+/* ---- buttons used on this page ---- */
+.BtnPrimary,
+.BtnGhost,
+.BtnDanger {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.BtnPrimary {
+  border: 0;
+  background: #0f766e;
+  color: #fff;
+}
+
+.BtnPrimary:hover { background: #0b5e57; }
+.BtnPrimary:disabled { background: #9ca3af; cursor: not-allowed; }
+
+.BtnGhost {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #374151;
+}
+
+.BtnDanger {
+  border: 1px solid #fecaca;
+  background: #fff;
+  color: #b91c1c;
+  margin-left: 6px;
+}
+
+/* ---- the add / edit form ---- */
+.TxForm {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.TxForm h3 {
+  margin: 0 0 12px;
+}
+
+.TxFormGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.TxFormGrid label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.TxFormButtons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* ---- the table ---- */
+.TableWrap {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow-x: auto; /* the table scrolls sideways on small screens */
+}
+
+.TxTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.TxTable th,
+.TxTable td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+  white-space: nowrap;
+}
+
+.TxTable th {
+  color: #6b7280;
+  font-weight: 600;
+  background: #fafafa;
+}
+
+.TxTable .right {
+  text-align: right;
+}
+
+.TxTable tr:last-child td {
+  border-bottom: 0;
+}

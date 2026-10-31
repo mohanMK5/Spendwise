@@ -1,0 +1,102 @@
+/* Full-height area that centers the card on the page */
+.LoginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* centers horizontally */
+  justify-content: center;   /* centers vertically */
+  min-height: 100vh;
+  background: #f7f7f2;
+}
+
+/* The white card */
+.LoginInner {
+  width: 100%;
+  max-width: 380px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.LoginTitle {
+  margin: 0;
+  font-size: 22px;
+  color: #0f766e;
+}
+
+.LoginInner h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* The form: stack label, input, label, input, button */
+.LoginInner form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.LoginInner label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.LoginInner input {
+  height: 44px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.LoginInner input:focus {
+  outline: none;
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.LoginInner button {
+  height: 44px;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 8px;
+  background: #0f766e;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.LoginInner button:hover {
+  background: #0b5e57;
+}
+
+.LoginInner p {
+  margin: 0;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.LoginInner a {
+  color: #0f766e;
+}
+
+/* ---- added: error message and disabled button ---- */
+.LoginError {
+  margin: 0;
+  padding: 8px 12px;
+  background: #fdecea;
+  color: #b71c1c;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.LoginInner button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
